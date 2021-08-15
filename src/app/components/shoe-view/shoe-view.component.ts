@@ -87,7 +87,7 @@ export class ShoeViewComponent implements OnInit {
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     this.orbitControls = new CameraControls(this.camera, this.renderer.domElement);
     this.orbitControls.dampingFactor = 0.01;
-    this.orbitControls.draggingDampingFactor = 0.02;
+    this.orbitControls.draggingDampingFactor = 0.1;
     this.orbitControls.dollySpeed = 0.15;
     this.orbitControls.minDistance = 2;
     this.orbitControls.maxDistance = 6;
