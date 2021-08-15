@@ -1,0 +1,116 @@
+.app-containier {
+    position: relative;
+    background-color: #f2f2f0;
+    display: flex;
+    align-items: center;
+}
+
+.top-ribbon {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.top-ribbon {
+    width: 85%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .shoe-name {
+        font-size: 1.8rem;
+    }
+    .close-shoe {
+        font-size: 2rem;
+    }
+}
+
+.shoe-size {
+    position: absolute;
+    left: 7.5%;
+    top: 20%;
+    width: 10rem;
+    @media only screen and (max-width: 670px) {
+        width: 85%;
+        top: initial;
+        bottom: 6%;
+    }
+    .sizes {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        span {
+            width: 3.5rem;
+            height: 3.5rem;
+            // background-color: #fff;
+            border: 1px solid rgb(177, 177, 177);
+            border-radius: 1rem;
+            margin: 0rem 0.5rem 0.5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span.active {
+            border-color: #282829;
+            background-color: #282829;
+            color: #fff;
+        }
+        // @media only screen and (max-width: 670px) {
+        //     overflow-x: scroll;
+        //     flex-wrap: nowrap;
+        // }
+    }
+}
+.shoe-color {
+    position: absolute;
+    right: 7.5%;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .colors {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        .single-color {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .single-color.active{
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+}
+
+
+// .add-button {
+//     align-self: flex-end;
+//     outline: none;
+//     border: none;
+//     border-radius: 1rem;
+//     color: #fff;
+//     background-color: #282829;
+//     margin-top: 1rem;
+//     font-weight: 500;
+//     font-size: 1rem;
+//     padding: 0.8rem 1.4rem;
+//     cursor: pointer;
+// }
+// .reviews-average {
+//     display: flex;
+//     align-items: center;
+//     .rating {
+//         margin: 0 0 0.4rem 0.4rem;
+//         font-size: 2rem;
+//         color: gold;
+//     }
+//     .rating-value, .average-rating {
+//         margin-left: 0.6rem;
+//     }
+// }
